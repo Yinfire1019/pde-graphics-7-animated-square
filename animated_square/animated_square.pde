@@ -24,13 +24,16 @@ void draw() {
 void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
-     y = y - 2;
+     y = y - 5;
     } else if (keyCode == DOWN) {
-     y = y + 2;
+     y = y + 5;
     } 
-  } else {
-    
+   }
+  if (key == CODED){
+    if(keyCode == LEFT){
+      x = x - 5;
+    }else if (keyCode == RIGHT){
+      x = x + 5;
+    }
   }
-
-
 }
