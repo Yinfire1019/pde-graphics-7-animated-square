@@ -21,13 +21,13 @@ void draw() {
         x = width;
       } else if (x > width){
         x = 0;
-      }
+      }//Write code so that the rectangle wraps the screen when it goes off the edges.
       
       if (y < 0){
         y = height;
       } else if ( y > height){
         y = 0;
-      }
+      }//Write code so that the rectangle wraps the screen when it goes off the edges.
       
    
    fill(255,255,255);
@@ -36,17 +36,19 @@ void draw() {
 
 void keyPressed() {
   if (key == CODED) {
-    if (keyCode == UP){
+    if (keyCode == UP){  // the squre will go up when press up
      y = y - 5;
-    } else if (keyCode == DOWN) {
+    } else if (keyCode == DOWN) {  //the square will go down when press down
      y = y + 5;
     } 
    }
   if (key == CODED){
-    if(keyCode == LEFT){
+    if(keyCode == LEFT){   // the squre will go left when press left
       x = x - 5;
-    }else if (keyCode == RIGHT){
+    }else if (keyCode == RIGHT){  // the square will go right when press right
       x = x + 5;
     }
   }
+
+
 }
